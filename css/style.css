@@ -566,17 +566,7 @@ ul.slick-dots {
       .form-box input {
         width: 100%;
       }
-    .form-tab {
-    writing-mode: horizontal-tb !important;
-    background-color: #1e1362;
-    color: white;
-    font-weight: bold;
-    padding: 22px 28px;
-    align-items: center;
-    justify-content: normal;    
-    border-radius: 10px;    
-    width: 190px !important;
-}
+
     }
     @media (min-width:900px) {
       .form-tab {
@@ -785,6 +775,9 @@ h1.abt-head {
     font-size: 45px;
     font-weight: 700;
 }
+ol li {
+    list-style: auto !important;   
+}
 @media (max-width: 768px) {
 .certi-gm {
     background-size: cover;
@@ -919,6 +912,17 @@ p.mt-md-4.font-14.white {
     border-radius: 50px;
     font-size: 16px !important;
     margin-top: 40px;
+}
+.form-tab {
+    writing-mode: horizontal-tb !important;
+    background-color: #1e1362;
+    color: white;
+    font-weight: bold;
+    padding: 12px 28px !important;
+    align-items: center;
+    justify-content: normal;
+    border-radius: 10px;
+    width: 190px !important;
 }
 }
 
