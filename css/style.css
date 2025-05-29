@@ -1089,6 +1089,15 @@ header.header.fixed {
 h6.certi-h6.text-center {
     margin-bottom: 20px;
 }
+.container.one.text-center {
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    background-image: url(image/Image.png);
+    background-position: center;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
  }
 .container.one.text-center {
     display: block;
