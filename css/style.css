@@ -85,8 +85,11 @@
       .navbar {
         flex-direction: column;
         align-items: flex-start;
-        padding: 20px 20px 10px;
+        padding: 10px 20px 20px 20px;
       }
+      section#pcd-pharma h6.bg-head.pcd {
+    width: 320px !important;
+}
           .blog-card {  
     height: 100%;
    
@@ -406,11 +409,7 @@ h6.bg-head.test.text-center {
 section.testimonials .slick-slide img {
     display: block;
     width: 100%;
-    padding: 0 10px;  
-        background-image: url(image/Image.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover; 
+    padding: 0 10px;     
 }
 section.testimonials h2.abt-head.text-center {
     margin-bottom: 60px;
@@ -952,6 +951,7 @@ p.mt-md-4.font-14.white {
     display: block;
     padding: 4px 0;
     cursor: pointer;
+    border-radius: 10px 10px 0px 0px;
 }
 div#mini_contact_form {
     padding: 10px;
@@ -965,11 +965,10 @@ button.btn.first.btn-primary.text-center {
 }
 .bubble {
     position: fixed;
-    bottom: 0px;
+    bottom: 150px;
     right: 0px;
     display: flex;
-    flex-direction: column;
-    top: 0;
+    flex-direction: column;    
     margin: auto;
     justify-content: center;
     align-items: flex-end;
@@ -1066,4 +1065,37 @@ img#imge {
 }
 .text-box ul li {
     list-style: disc;   
+}
+header.header.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.fixed .top-bar {
+    padding-bottom: 0;
+}
+.fixed .navbar-outer {
+    padding-top: 1px;    
+}
+ @media (max-width:768px) {
+  .fixed .navbar-outer {
+    padding-top: 0px !important;
+}
+.fixed .navbar {
+    padding: 12px !important;
+    margin-top: 0 !important;
+}
+h6.certi-h6.text-center {
+    margin-bottom: 20px;
+}
+ }
+.container.one.text-center {
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    background-image: url(image/Image.png);
+    background-position: center;
+    background-size: 25%;
+    background-repeat: space;
 }
