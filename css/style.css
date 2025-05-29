@@ -299,14 +299,16 @@ ol {
       font-size: 32px;
       font-weight: 700;
     }
-    .card-custom {
-      background-color: #ffffff;
-      border-radius: 20px;
-      padding: 20px;
-      margin-bottom: 20px;
-      position: relative;
-      transition: transform 0.2s;
-    }
+   .card-custom {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: transform 0.2s;
+    height: auto;
+    min-height: 280px;
+}
     .card-custom:hover {
       transform: translateY(-5px);
     }
@@ -430,16 +432,7 @@ ul.slick-dots {
 
 /* form section */
 
-.sections {
-    background: url('image/form-Background.png');
-    background-size: cover;
-    padding: 250px 0 170px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin-top: -80px;
-}
+
 
  .sections .container {   
    display: flex;  
@@ -522,9 +515,9 @@ ul.slick-dots {
       display: inline-block;
       background: #fff;
       color: #1e1362;
-      padding: 6px 14px;
+      padding: 10px 14px;
       border-radius: 20px;
-      font-size: 12px;
+      font-size: 16px;
       font-weight: bold;
       margin-bottom: 20px;
     }
@@ -722,6 +715,16 @@ section.blog.py-5 h6.bg-head.product {
     height: 50%;
    
 }
+.sections {
+    background: url('image/form-Background.png');
+    background-size: cover;
+    padding: 250px 0 170px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: -80px;
+}
 }
 
 
@@ -738,7 +741,7 @@ li {
 div#contact ul li a i {
     color: #fff;
     margin-right: 13px;
-    font-size: 36px;
+    font-size: 30px;
 }
 @media (min-width: 768px) {
     .quick-link.col-md-4 {
@@ -866,14 +869,23 @@ section.testimonials h2.abt-head.text-center {
     font-size: 35px !important;
 }
 .sections {
-    background: url('image/form-Background.png');
-    background-size: contain;
-    padding: 60px 0 76px 0;
+    padding: 55px 0 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    margin-top: 30px;
+    /* min-height: 100vh; */
+    margin-top: 50px;
+    background-color: #38A0A7!important;
+    margin-bottom: 50px;
+}
+.text-box {
+    flex: 1;
+    padding: 20px !important;
+    color: white;
+    background-color: transparent;
+}
+.text-box ul li {
+    list-style: disc !important;   
 }
 footer {
     position: relative;
@@ -925,5 +937,133 @@ p.mt-md-4.font-14.white {
     width: 190px !important;
 }
 }
-
-
+.footer-form {
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+    z-index: 1000;
+    width: 286px;
+}
+.footer-form .heading-look {
+    font-size: 20px;
+    background: #19065f;
+    color: #fff;
+    text-align: center;
+    display: block;
+    padding: 4px 0;
+    cursor: pointer;
+}
+div#mini_contact_form {
+    padding: 10px;
+    display:none;
+    background: #ffff;
+}
+button.btn.first.btn-primary.text-center {
+    background-color: #38a0a7;
+    border: none;
+    margin-top: 25px !important;
+}
+.bubble {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    margin: auto;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 99;
+}
+.bubble a.call {
+    background: #38a0a7;
+}
+.bubble a {
+    border-radius: 5px 0 0 5px;
+    margin-top: 8px;
+    box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 46%);
+    overflow: hidden;
+    color: #fff;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    width: 55px;
+    transition: all 0.5s linear;
+    height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.bubble label {
+    display: none;
+    transition: all 0.5s linear;
+    margin-bottom: 0;
+    margin-right: 35px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.bubble a.whats {
+    background: #25D366;
+}
+.bubble a:hover {
+    width: 100%;
+}
+.bubble a:hover label {
+    display: block;
+}
+.card-custom.first {
+    background-image: url(image/bg-product.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: initial;
+    height: 100;
+}
+img#imge {
+    width: 85px;
+}
+.card-custom.active {
+    background-color: #2da9ad;
+    color: white;
+    background-image: url(image/SVG.png);
+    background-position-x: right;
+    background-repeat: no-repeat;   
+    background-size: 59%;
+    background-position-y: 22px;
+}
+.card-custom.second,.card-custom.six {
+    background-image: url(image/quality-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 16px;
+}
+.card-custom.third, .card-custom.seven {
+    background-image: url(image/inno-bg.png);
+    background-position-x: 87%;
+    background-repeat: no-repeat;
+    background-position-y: 14%;
+}
+.card-custom.five {
+  background-image: url(image/certifi-bg.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 10%;
+}
+.card-custom.four {
+  background-image: url(image/section-bg.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 30%;
+}
+.about-us.py-5 .col-md-6 h6.bg-head {
+    background-color: #38A0A7;
+    width: 133px;
+    padding: 10px 14px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50px;
+    font-size: 16px !important;
+}
+.text-box ul li {
+    list-style: disc;   
+}
