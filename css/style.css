@@ -224,7 +224,7 @@ section#category {
 .category-content-inner {
     display: block;
     gap: 16px;
-    box-shadow: #AAD4DA -1px -1px 5px 5px;
+    box-shadow: #aad4da36 3px 3px 18px 13px;
     padding: 20px;
     align-items: center;
     border-radius: 15px;
