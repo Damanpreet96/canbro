@@ -211,6 +211,10 @@ section.about-us.py-5 p {
     line-height: 28px;
     font-weight: 500 !important;
     margin-bottom: 30px;
+    text-align: justify;
+}
+p.wow.fadeInLeft {
+    text-align: justify;
 }
 
 
@@ -778,7 +782,9 @@ h1.abt-head {
     font-weight: 700;
 }
 ol li {
-    list-style: auto !important;   
+    list-style: auto !important;
+    font-size: 16px;
+    font-weight: 500;
 }
 @media (max-width: 768px) {
 .certi-gm {
