@@ -9,7 +9,7 @@
     } */
 
 .top-bar {
-      background-color: #38a1a7;
+      background-color: transparent;
       color: white;
       font-size: 14px;
       padding: 8px 70px;
@@ -263,7 +263,7 @@ section.about-us.py-5 .contact-btn {
     height: 330px;
 }  
 .navbar-outer {
-    background-color: #38a1a7;
+    background-color: transparent;
     padding: 5px 70px 10px 70px;
 }
 }
@@ -1074,9 +1074,11 @@ header.header.fixed {
 }
 .fixed .top-bar {
     padding-bottom: 0;
+    background-color: #38a0a6;
 }
 .fixed .navbar-outer {
-    padding-top: 1px;    
+    padding-top: 1px;  
+    background-color: #38a0a6;  
 }
  @media (max-width:768px) {
   .fixed .navbar-outer {
@@ -1107,4 +1109,10 @@ h6.certi-h6.text-center {
     background-position: center;
     background-size: 25%;
     background-repeat: space;
+}
+header.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
 }
