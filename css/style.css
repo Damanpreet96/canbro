@@ -295,7 +295,7 @@ ol {
       color: white;
       padding: 6px 16px;
       border-radius: 20px;
-      font-size: 12px;
+      font-size: 16px;
       margin-bottom: 10px;
     }
     .title {
@@ -1115,4 +1115,13 @@ header.header {
     top: 0;
     width: 100%;
     z-index: 99;
+}
+
+@media (max-width:768px) {
+  header.header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
 }
